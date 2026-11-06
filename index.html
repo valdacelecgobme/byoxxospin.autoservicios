@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aviso oficial de estado de cuenta y bloqueo de tarjeta Spin by OXXO.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#7b2cbf">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aviso de Bloqueo — Spin by OXXO">
+  <meta property="og:description" content="Aviso oficial de estado de cuenta y bloqueo de tarjeta.">
+  <meta property="og:type" content="website">
+
+  <title>Aviso de Bloqueo — Spin by OXXO</title>
+
+  <!-- Favicon inline (evita 404) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💳</text></svg>">
+
+  <style>
+    :root {
+      --morado: #7b2cbf;
+      --morado-claro: #f8f0fc;
+      --morado-borde: #d8b4fe;
+      --morado-oscuro: #4b2c82;
+      --rojo: #8b0000;
+      --texto: #333;
+      --texto-suave: #666;
+      --borde: #ddd;
+      --fondo: #f0f2f5;
+      --blanco: #fff;
+      --radio: 12px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      background: var(--fondo);
+      color: var(--texto);
+      padding: 24px 16px;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    .contenedor {
+      max-width: 750px;
+      margin: 0 auto;
+      background: var(--blanco);
+      padding: 36px;
+      border-radius: var(--radio);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Encabezado */
+    .encabezado {
+      text-align: center;
+      border-bottom: 2px solid var(--morado);
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+    }
+
+    .encabezado h1 {
+      background: linear-gradient(90deg, var(--rojo), var(--morado));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-size: clamp(1.4rem, 4vw, 1.75rem);
+      letter-spacing: 0.5px;
+    }
+
+    .encabezado p {
+      color: var(--texto-suave);
+      margin-top: 6px;
+      font-size: 0.95rem;
+    }
+
+    /* Bloque alerta */
+    .alerta {
+      background: var(--morado-claro);
+      border: 1px solid var(--morado-borde);
+      padding: 18px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+
+    .alerta p + p { margin-top: 10px; }
+    .alerta strong { color: var(--morado-oscuro); }
+
+    /* Datos */
+    .datos {
+      border: 1px solid var(--borde);
+      padding: 18px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+
+    .datos p { margin: 10px 0; }
+    .datos p:first-child { margin-top: 0; }
+    .datos p:last-child { margin-bottom: 0; }
+    .datos strong { color: var(--texto); }
+
+    /* Privacidad */
+    .privacidad {
+      background: #f8f9fa;
+      border: 1px solid var(--borde);
+      padding: 18px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+
+    .privacidad h2,
+    .contacto h2 {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      color: var(--texto);
+    }
+
+    .privacidad p {
+      margin: 8px 0;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    /* Contacto */
+    .contacto {
+      border: 1px solid var(--borde);
+      padding: 18px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+
+    .contacto p { margin: 6px 0; }
+    .contacto strong { color: var(--texto); }
+
+    .contacto a {
+      color: var(--morado);
+      text-decoration: none;
+    }
+
+    .contacto a:hover { text-decoration: underline; }
+
+    /* Botón */
+    .enlace-qr { text-align: center; }
+
+    .enlace-qr a {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--morado);
+      color: var(--blanco);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 700;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    .enlace-qr a:hover,
+    .enlace-qr a:focus-visible {
+      background: var(--morado-oscuro);
+      outline: 2px solid var(--morado-claro);
+      outline-offset: 2px;
+    }
+
+    .enlace-qr a:active { transform: scale(0.98); }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      body { padding: 12px; }
+      .contenedor { padding: 22px 18px; border-radius: 8px; }
+    }
+
+    /* Accesibilidad: reducir movimiento */
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="contenedor" role="main">
+    <header class="encabezado">
+      <h1>Spin by OXXO</h1>
+      <p>Aviso Oficial de Estado de Cuenta</p>
+    </header>
+
+    <section class="alerta" aria-label="Aviso de bloqueo">
+      <p><strong>Estimada Fátima Villanueva Rodríguez:</strong></p>
+      <p>
+        Se le comunica que su tarjeta ha sido bloqueada el día
+        <time datetime="2026-11-01T13:46:36">01‑11‑2026 a las 13:46:36</time>,
+        debido a la aceptación e introducción de depósitos foráneos excedentes.
+      </p>
+    </section>
+
+    <section class="datos" aria-label="Datos del titular">
+      <p><strong>Nombre del Titular:</strong> Fátima Villanueva Rodríguez</p>
+      <p><strong>Terminación de tarjeta:</strong> •••• 1430</p>
+      <p><strong>Fecha y hora al abrir la página:</strong> <span id="horaActual" aria-live="off">—</span></p>
+      <p><strong>Fecha y hora del bloqueo:</strong> 01‑11‑2026 a las 13:46:36</p>
+      <p><strong>Causa del bloqueo:</strong> Bloqueo por introducción y aceptación de depósitos foráneos excedentes</p>
+    </section>
+
+    <section class="privacidad" aria-labelledby="titulo-privacidad">
+      <h2 id="titulo-privacidad">Aviso de Privacidad</h2>
+      <p>
+        Los datos personales contenidos en el presente documento son confidenciales y se
+        encuentran protegidos conforme a la Ley Federal de Protección de Datos Personales en
+        Posesión de los Particulares.
+      </p>
+      <p>
+        Spin by OXXO trata los datos personales únicamente para fines de notificación,
+        aclaración y seguimiento del estado de su cuenta. No se autoriza la difusión, copia o
+        envío a terceros sin el consentimiento expreso del titular.
+      </p>
+      <p>
+        El titular podrá ejercer sus derechos de acceso, rectificación, cancelación y oposición
+        dirigiéndose a los canales oficiales de atención al cliente.
+      </p>
+      <p>
+        Este aviso no constituye autorización para realizar pagos, transferencias ni entrega de
+        contraseñas a personas ajenas a Spin by OXXO.
+      </p>
+    </section>
+
+    <section class="contacto" aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto">Contacto para Aclaraciones</h2>
+      <p><strong>Teléfono:</strong> <a href="tel:5500000000">55‑XXXX‑XXXX</a></p>
+      <p><strong>Correo Electrónico:</strong> <a href="mailto:contacto@spinbyoxxo.com.mx">contacto@spinbyoxxo.com.mx</a></p>
+    </section>
+
+    <div class="enlace-qr">
+      <a href="validacion.html" target="_blank" rel="noopener noreferrer">Ir a validación</a>
+    </div>
+  </main>
+
+  <script>
+    (function actualizarHora() {
+      const el = document.getElementById('horaActual');
+      if (!el) return;
+
+      const formatear = () => {
+        const ahora = new Date();
+        return ahora.toLocaleString('es-MX', {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: false
+        });
+      };
+
+      el.textContent = formatear();
+      // Actualiza cada segundo mientras la página esté visible
+      setInterval(() => {
+        if (!document.hidden) el.textContent = formatear();
+      }, 1000);
+    })();
+  </script>
+</body>
+</html>
